@@ -1,0 +1,7 @@
+v4l2_camera_node:
+  ros__parameters:
+    video_device: "/dev/video0"
+    image_width: 640
+    image_height: 480
+    pixel_format: "YUYV"
+    frame_rate: 30

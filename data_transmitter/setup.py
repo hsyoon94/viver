@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'data_sender = data_transmitter.data_sender:main',
+            'image_sender = data_transmitter.image_sender:main',
         ],
     },
 )
