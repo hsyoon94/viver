@@ -1,59 +1,61 @@
 import rclpy
 from rclpy.node import Node
+import numpy as np
+import cv2
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
-import cv2
 
-class StereoImageProcessor(Node):
+class ContinuousNode(Node):
     def __init__(self):
-        super().__init__('stereo_image_processor')
-        
-        # 이미지 토픽 구독
-        self.subscription = self.create_subscription(
-            Image,
-            '/image_raw',  # 카메라 이미지 토픽 이름
-            self.image_callback,
-            10
-        )
+        super().__init__('stereo_image_processor')  # 노드 이름 설정
+        self.timer = self.create_timer(0.05, self.timer_callback)  # 1초 주기로 타이머 생성
+        self.device_id = '/dev/video0'
+        self.cap = cv2.VideoCapture(self.device_id)
+
+        self.cap.set(cv2.CAP_PROP_CONVERT_RGB, 0)
+        self.cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'YUYV'))
+        self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+        self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
+
         self.bridge = CvBridge()
-        self.frame_count = 0  # 프레임 번호 추적
-        
-        self.left_image = None
-        self.right_image = None
 
-    def image_callback(self, msg):
-        # ROS 이미지 메시지를 OpenCV 이미지로 변환
-        frame = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
+        self.publisher_left = self.create_publisher(Image, '/camera/image_left', 10)
+        self.publisher_right = self.create_publisher(Image, '/camera/image_right', 10)
 
-        # 프레임 번호로 Left/Right 결정
-        if self.frame_count % 2 == 0:
-            self.left_image = frame
-            self.get_logger().info('Left image received.')
-            cv2.imshow('Left Image', self.left_image)
-        else:
-            self.right_image = frame
-            self.get_logger().info('Right image received.')
-            cv2.imshow('Right Image', self.right_image)
 
-        self.frame_count += 1
+    def split_images(self, input_frame):
+        dst_img = [None, None]
+        timestamp = None
 
-        # OpenCV 윈도우 업데이트
-        cv2.waitKey(1)
+        right, left = cv2.split(input_frame)
+
+        left = cv2.cvtColor(left, cv2.COLOR_BayerGR2RGB)
+        right = cv2.cvtColor(right, cv2.COLOR_BayerGR2RGB)
+
+        return left, right
+
+    def timer_callback(self):
+        ret, frame = self.cap.read()
+
+        left_rgb, right_rgb = self.split_images(frame)
+
+        left_rgb_msg = self.bridge.cv2_to_imgmsg(left_rgb, encoding="bgr8")
+        right_rgb_msg = self.bridge.cv2_to_imgmsg(right_rgb, encoding="bgr8")
+
+        self.publisher_left.publish(left_rgb_msg)
+        self.publisher_right.publish(right_rgb_msg)
 
 
 def main(args=None):
     rclpy.init(args=args)
-    processor = StereoImageProcessor()
-
+    node = ContinuousNode()
     try:
-        rclpy.spin(processor)
+        rclpy.spin(node)  # 노드를 실행 상태로 유지
     except KeyboardInterrupt:
-        processor.get_logger().info('Shutting down...')
+        node.get_logger().info('Node stopped manually.')
     finally:
-        processor.destroy_node()
+        node.destroy_node()
         rclpy.shutdown()
-        cv2.destroyAllWindows()
-
 
 if __name__ == '__main__':
     main()
