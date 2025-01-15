@@ -24,9 +24,6 @@ class ContinuousNode(Node):
 
 
     def split_images(self, input_frame):
-        dst_img = [None, None]
-        timestamp = None
-
         right, left = cv2.split(input_frame)
 
         left = cv2.cvtColor(left, cv2.COLOR_BayerGR2RGB)
@@ -36,12 +33,14 @@ class ContinuousNode(Node):
 
     def timer_callback(self):
         ret, frame = self.cap.read()
-
         left_rgb, right_rgb = self.split_images(frame)
 
         left_rgb_msg = self.bridge.cv2_to_imgmsg(left_rgb, encoding="bgr8")
         right_rgb_msg = self.bridge.cv2_to_imgmsg(right_rgb, encoding="bgr8")
 
+        current_time = self.get_clock().now()
+        left_rgb_msg.header.stamp = current_time.to_msg()
+        right_rgb_msg.header.stamp = current_time.to_msg()
         self.publisher_left.publish(left_rgb_msg)
         self.publisher_right.publish(right_rgb_msg)
 

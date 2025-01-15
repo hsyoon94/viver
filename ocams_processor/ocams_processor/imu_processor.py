@@ -72,6 +72,8 @@ class OCamIMUNode(Node):
             imu_msg.orientation.z = quat_z
 
             # Publish the IMU data
+            current_time = self.get_clock().now()
+            imu_msg.header.stamp = current_time.to_msg()
             self.imu_publisher.publish(imu_msg)
         except Exception as e:
             self.get_logger().error(f'Error processing IMU data: {e}')
