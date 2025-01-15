@@ -1,0 +1,51 @@
+[6.435s] Invoking command in '/home/viver1/ros2_ws/src/data_transmitter': PYTHONPATH=/home/viver1/ros2_ws/src/build/data_transmitter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/data_transmitter build --build-base /home/viver1/ros2_ws/src/build/data_transmitter/build install --record /home/viver1/ros2_ws/src/build/data_transmitter/install.log --single-version-externally-managed install_data
+[8.276s] running egg_info
+[8.278s] creating ../build/data_transmitter/data_transmitter.egg-info
+[8.295s] writing ../build/data_transmitter/data_transmitter.egg-info/PKG-INFO
+[8.301s] writing dependency_links to ../build/data_transmitter/data_transmitter.egg-info/dependency_links.txt
+[8.301s] writing entry points to ../build/data_transmitter/data_transmitter.egg-info/entry_points.txt
+[8.303s] writing requirements to ../build/data_transmitter/data_transmitter.egg-info/requires.txt
+[8.304s] writing top-level names to ../build/data_transmitter/data_transmitter.egg-info/top_level.txt
+[8.305s] writing manifest file '../build/data_transmitter/data_transmitter.egg-info/SOURCES.txt'
+[8.319s] reading manifest file '../build/data_transmitter/data_transmitter.egg-info/SOURCES.txt'
+[8.327s] writing manifest file '../build/data_transmitter/data_transmitter.egg-info/SOURCES.txt'
+[8.331s] running build
+[8.332s] running build_py
+[8.333s] creating /home/viver1/ros2_ws/src/build/data_transmitter/build
+[8.335s] creating /home/viver1/ros2_ws/src/build/data_transmitter/build/lib
+[8.338s] creating /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter
+[8.340s] copying data_transmitter/data_sender.py -> /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter
+[8.343s] copying data_transmitter/image_sender.py -> /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter
+[8.344s] copying data_transmitter/__init__.py -> /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter
+[8.345s] copying data_transmitter/tcp_teleop_single.py -> /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter
+[8.346s] copying data_transmitter/stereo_image_processor.py -> /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter
+[8.364s] copying data_transmitter/image_receiver_single.py -> /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter
+[8.375s] running install
+[8.386s] running install_lib
+[8.388s] creating /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter
+[8.395s] copying /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter/data_sender.py -> /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter
+[8.404s] copying /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter/image_sender.py -> /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter
+[8.405s] copying /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter/__init__.py -> /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter
+[8.405s] copying /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter/tcp_teleop_single.py -> /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter
+[8.406s] copying /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter/stereo_image_processor.py -> /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter
+[8.407s] copying /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter/image_receiver_single.py -> /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter
+[8.408s] byte-compiling /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter/data_sender.py to data_sender.cpython-310.pyc
+[8.411s] byte-compiling /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter/image_sender.py to image_sender.cpython-310.pyc
+[8.415s] byte-compiling /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter/__init__.py to __init__.cpython-310.pyc
+[8.416s] byte-compiling /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter/tcp_teleop_single.py to tcp_teleop_single.cpython-310.pyc
+[8.417s] byte-compiling /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter/stereo_image_processor.py to stereo_image_processor.cpython-310.pyc
+[8.418s] byte-compiling /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter/image_receiver_single.py to image_receiver_single.cpython-310.pyc
+[8.420s] running install_data
+[8.421s] creating /home/viver1/ros2_ws/src/install/data_transmitter/share/ament_index
+[8.424s] creating /home/viver1/ros2_ws/src/install/data_transmitter/share/ament_index/resource_index
+[8.425s] creating /home/viver1/ros2_ws/src/install/data_transmitter/share/ament_index/resource_index/packages
+[8.425s] copying resource/data_transmitter -> /home/viver1/ros2_ws/src/install/data_transmitter/share/ament_index/resource_index/packages
+[8.426s] copying package.xml -> /home/viver1/ros2_ws/src/install/data_transmitter/share/data_transmitter
+[8.427s] running install_egg_info
+[8.428s] Copying ../build/data_transmitter/data_transmitter.egg-info to /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter-0.0.0-py3.10.egg-info
+[8.436s] running install_scripts
+[8.614s] Installing data_sender script to /home/viver1/ros2_ws/src/install/data_transmitter/lib/data_transmitter
+[8.616s] Installing image_sender script to /home/viver1/ros2_ws/src/install/data_transmitter/lib/data_transmitter
+[8.617s] Installing stereo_image_processor script to /home/viver1/ros2_ws/src/install/data_transmitter/lib/data_transmitter
+[8.621s] writing list of installed files to '/home/viver1/ros2_ws/src/build/data_transmitter/install.log'
+[8.871s] Invoked command in '/home/viver1/ros2_ws/src/data_transmitter' returned '0': PYTHONPATH=/home/viver1/ros2_ws/src/build/data_transmitter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/data_transmitter build --build-base /home/viver1/ros2_ws/src/build/data_transmitter/build install --record /home/viver1/ros2_ws/src/build/data_transmitter/install.log --single-version-externally-managed install_data

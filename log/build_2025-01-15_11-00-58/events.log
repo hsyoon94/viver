@@ -1,0 +1,194 @@
+[0.000000] (-) TimerEvent: {}
+[0.001919] (cmp10a_imu) JobQueued: {'identifier': 'cmp10a_imu', 'dependencies': OrderedDict()}
+[0.002748] (data_transmitter) JobQueued: {'identifier': 'data_transmitter', 'dependencies': OrderedDict()}
+[0.003303] (cmp10a_imu) JobStarted: {'identifier': 'cmp10a_imu'}
+[0.072374] (data_transmitter) JobStarted: {'identifier': 'data_transmitter'}
+[0.099055] (-) TimerEvent: {}
+[0.200995] (-) TimerEvent: {}
+[0.301803] (-) TimerEvent: {}
+[0.402526] (-) TimerEvent: {}
+[0.503218] (-) TimerEvent: {}
+[0.603949] (-) TimerEvent: {}
+[0.704659] (-) TimerEvent: {}
+[0.805614] (-) TimerEvent: {}
+[0.906953] (-) TimerEvent: {}
+[1.008045] (-) TimerEvent: {}
+[1.109639] (-) TimerEvent: {}
+[1.211341] (-) TimerEvent: {}
+[1.312744] (-) TimerEvent: {}
+[1.413810] (-) TimerEvent: {}
+[1.515002] (-) TimerEvent: {}
+[1.616169] (-) TimerEvent: {}
+[1.717167] (-) TimerEvent: {}
+[1.818159] (-) TimerEvent: {}
+[1.919125] (-) TimerEvent: {}
+[2.020116] (-) TimerEvent: {}
+[2.121396] (-) TimerEvent: {}
+[2.222894] (-) TimerEvent: {}
+[2.327200] (-) TimerEvent: {}
+[2.428510] (-) TimerEvent: {}
+[2.529338] (-) TimerEvent: {}
+[2.630224] (-) TimerEvent: {}
+[2.730979] (-) TimerEvent: {}
+[2.831678] (-) TimerEvent: {}
+[2.932368] (-) TimerEvent: {}
+[3.033091] (-) TimerEvent: {}
+[3.133810] (-) TimerEvent: {}
+[3.234490] (-) TimerEvent: {}
+[3.335187] (-) TimerEvent: {}
+[3.435929] (-) TimerEvent: {}
+[3.536630] (-) TimerEvent: {}
+[3.637371] (-) TimerEvent: {}
+[3.738285] (-) TimerEvent: {}
+[3.839463] (-) TimerEvent: {}
+[3.940370] (-) TimerEvent: {}
+[4.042614] (-) TimerEvent: {}
+[4.143503] (-) TimerEvent: {}
+[4.248862] (-) TimerEvent: {}
+[4.352246] (-) TimerEvent: {}
+[4.453586] (-) TimerEvent: {}
+[4.554472] (-) TimerEvent: {}
+[4.655885] (-) TimerEvent: {}
+[4.757053] (-) TimerEvent: {}
+[4.859888] (-) TimerEvent: {}
+[4.962005] (-) TimerEvent: {}
+[5.064213] (-) TimerEvent: {}
+[5.166548] (-) TimerEvent: {}
+[5.268222] (-) TimerEvent: {}
+[5.370190] (-) TimerEvent: {}
+[5.471097] (-) TimerEvent: {}
+[5.571862] (-) TimerEvent: {}
+[5.672596] (-) TimerEvent: {}
+[5.773365] (-) TimerEvent: {}
+[5.874242] (-) TimerEvent: {}
+[5.975248] (-) TimerEvent: {}
+[6.076376] (-) TimerEvent: {}
+[6.177588] (-) TimerEvent: {}
+[6.281056] (-) TimerEvent: {}
+[6.384450] (-) TimerEvent: {}
+[6.488377] (-) TimerEvent: {}
+[6.509223] (data_transmitter) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/data_transmitter', 'build', '--build-base', '/home/viver1/ros2_ws/src/build/data_transmitter/build', 'install', '--record', '/home/viver1/ros2_ws/src/build/data_transmitter/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/viver1/ros2_ws/src/data_transmitter', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'viver1', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/viver1', 'OLDPWD': '/home/viver1/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1048', 'SYSTEMD_EXEC_PID': '1424', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ASTRA_SDK_INCLUDE': '/home/viver1/Downloads/AstraSDK-v2.1.3-94bca0f52e-20210611T023312Z-Linux-aarch64/install/include', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '1889', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'viver1', 'JOURNAL_STREAM': '8:24333', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'viver1', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/viver1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/viver1-desktop:@/tmp/.ICE-unix/1195,unix/viver1-desktop:/tmp/.ICE-unix/1195', 'INVOCATION_ID': 'ae2f51a8bcdc444abbc43b1374f146dc', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'ASTRA_SDK_LIB': '/home/viver1/Downloads/AstraSDK-v2.1.3-94bca0f52e-20210611T023312Z-Linux-aarch64/install/lib', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.BFFI02', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:15f9d718-85df-40c1-af21-bc8c0662e1a3', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/viver1/ros2_ws/src/build/data_transmitter', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/viver1/ros2_ws/src/build/data_transmitter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[6.574173] (cmp10a_imu) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/cmp10a_imu', 'build', '--build-base', '/home/viver1/ros2_ws/src/build/cmp10a_imu/build', 'install', '--record', '/home/viver1/ros2_ws/src/build/cmp10a_imu/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/viver1/ros2_ws/src/cmp10a_imu', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'viver1', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/viver1', 'OLDPWD': '/home/viver1/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '1048', 'SYSTEMD_EXEC_PID': '1424', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ASTRA_SDK_INCLUDE': '/home/viver1/Downloads/AstraSDK-v2.1.3-94bca0f52e-20210611T023312Z-Linux-aarch64/install/include', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '1889', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'viver1', 'JOURNAL_STREAM': '8:24333', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'viver1', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/viver1/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/viver1-desktop:@/tmp/.ICE-unix/1195,unix/viver1-desktop:/tmp/.ICE-unix/1195', 'INVOCATION_ID': 'ae2f51a8bcdc444abbc43b1374f146dc', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'ASTRA_SDK_LIB': '/home/viver1/Downloads/AstraSDK-v2.1.3-94bca0f52e-20210611T023312Z-Linux-aarch64/install/lib', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.BFFI02', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:15f9d718-85df-40c1-af21-bc8c0662e1a3', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/viver1/ros2_ws/src/build/cmp10a_imu', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/viver1/ros2_ws/src/build/cmp10a_imu/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[6.588651] (-) TimerEvent: {}
+[6.689873] (-) TimerEvent: {}
+[6.794750] (-) TimerEvent: {}
+[6.897389] (-) TimerEvent: {}
+[7.002780] (-) TimerEvent: {}
+[7.104792] (-) TimerEvent: {}
+[7.205744] (-) TimerEvent: {}
+[7.306766] (-) TimerEvent: {}
+[7.407982] (-) TimerEvent: {}
+[7.509125] (-) TimerEvent: {}
+[7.610201] (-) TimerEvent: {}
+[7.711826] (-) TimerEvent: {}
+[7.814172] (-) TimerEvent: {}
+[7.918158] (-) TimerEvent: {}
+[8.019058] (-) TimerEvent: {}
+[8.120185] (-) TimerEvent: {}
+[8.221111] (-) TimerEvent: {}
+[8.322218] (-) TimerEvent: {}
+[8.356347] (data_transmitter) StdoutLine: {'line': b'running egg_info\n'}
+[8.357979] (cmp10a_imu) StdoutLine: {'line': b'running egg_info\n'}
+[8.358668] (data_transmitter) StdoutLine: {'line': b'creating ../build/data_transmitter/data_transmitter.egg-info\n'}
+[8.359209] (cmp10a_imu) StdoutLine: {'line': b'creating ../build/cmp10a_imu/cmp10a_imu.egg-info\n'}
+[8.366407] (cmp10a_imu) StdoutLine: {'line': b'writing ../build/cmp10a_imu/cmp10a_imu.egg-info/PKG-INFO\n'}
+[8.367720] (data_transmitter) StdoutLine: {'line': b'writing ../build/data_transmitter/data_transmitter.egg-info/PKG-INFO\n'}
+[8.376517] (cmp10a_imu) StdoutLine: {'line': b'writing dependency_links to ../build/cmp10a_imu/cmp10a_imu.egg-info/dependency_links.txt\n'}
+[8.378646] (cmp10a_imu) StdoutLine: {'line': b'writing entry points to ../build/cmp10a_imu/cmp10a_imu.egg-info/entry_points.txt\n'}
+[8.379382] (cmp10a_imu) StdoutLine: {'line': b'writing requirements to ../build/cmp10a_imu/cmp10a_imu.egg-info/requires.txt\n'}
+[8.380048] (cmp10a_imu) StdoutLine: {'line': b'writing top-level names to ../build/cmp10a_imu/cmp10a_imu.egg-info/top_level.txt\n'}
+[8.380954] (data_transmitter) StdoutLine: {'line': b'writing dependency_links to ../build/data_transmitter/data_transmitter.egg-info/dependency_links.txt\n'}
+[8.382315] (data_transmitter) StdoutLine: {'line': b'writing entry points to ../build/data_transmitter/data_transmitter.egg-info/entry_points.txt\n'}
+[8.383012] (cmp10a_imu) StdoutLine: {'line': b"writing manifest file '../build/cmp10a_imu/cmp10a_imu.egg-info/SOURCES.txt'\n"}
+[8.383996] (data_transmitter) StdoutLine: {'line': b'writing requirements to ../build/data_transmitter/data_transmitter.egg-info/requires.txt\n'}
+[8.385407] (data_transmitter) StdoutLine: {'line': b'writing top-level names to ../build/data_transmitter/data_transmitter.egg-info/top_level.txt\n'}
+[8.386217] (data_transmitter) StdoutLine: {'line': b"writing manifest file '../build/data_transmitter/data_transmitter.egg-info/SOURCES.txt'\n"}
+[8.386967] (cmp10a_imu) StdoutLine: {'line': b"reading manifest file '../build/cmp10a_imu/cmp10a_imu.egg-info/SOURCES.txt'\n"}
+[8.390614] (cmp10a_imu) StdoutLine: {'line': b"writing manifest file '../build/cmp10a_imu/cmp10a_imu.egg-info/SOURCES.txt'\n"}
+[8.391372] (cmp10a_imu) StdoutLine: {'line': b'running build\n'}
+[8.393441] (cmp10a_imu) StdoutLine: {'line': b'running build_py\n'}
+[8.394070] (cmp10a_imu) StdoutLine: {'line': b'creating /home/viver1/ros2_ws/src/build/cmp10a_imu/build\n'}
+[8.394648] (cmp10a_imu) StdoutLine: {'line': b'creating /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib\n'}
+[8.395261] (cmp10a_imu) StdoutLine: {'line': b'creating /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu\n'}
+[8.396744] (cmp10a_imu) StdoutLine: {'line': b'copying cmp10a_imu/cmp10a_chatgpt.py -> /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu\n'}
+[8.397576] (cmp10a_imu) StdoutLine: {'line': b'copying cmp10a_imu/cmp10a_imu_node.py -> /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu\n'}
+[8.399466] (data_transmitter) StdoutLine: {'line': b"reading manifest file '../build/data_transmitter/data_transmitter.egg-info/SOURCES.txt'\n"}
+[8.400777] (cmp10a_imu) StdoutLine: {'line': b'copying cmp10a_imu/__init__.py -> /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu\n'}
+[8.401434] (cmp10a_imu) StdoutLine: {'line': b'copying cmp10a_imu/cmp10a_imu_node_copy.py -> /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu\n'}
+[8.403314] (cmp10a_imu) StdoutLine: {'line': b'copying cmp10a_imu/cmp10a_imu_node_ros1_stype.py -> /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu\n'}
+[8.403953] (data_transmitter) StdoutLine: {'line': b"writing manifest file '../build/data_transmitter/data_transmitter.egg-info/SOURCES.txt'\n"}
+[8.409314] (data_transmitter) StdoutLine: {'line': b'running build\n'}
+[8.412689] (data_transmitter) StdoutLine: {'line': b'running build_py\n'}
+[8.413643] (data_transmitter) StdoutLine: {'line': b'creating /home/viver1/ros2_ws/src/build/data_transmitter/build\n'}
+[8.414679] (cmp10a_imu) StdoutLine: {'line': b'running install\n'}
+[8.415654] (data_transmitter) StdoutLine: {'line': b'creating /home/viver1/ros2_ws/src/build/data_transmitter/build/lib\n'}
+[8.416461] (data_transmitter) StdoutLine: {'line': b'creating /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter\n'}
+[8.419803] (data_transmitter) StdoutLine: {'line': b'copying data_transmitter/data_sender.py -> /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter\n'}
+[8.421584] (cmp10a_imu) StdoutLine: {'line': b'running install_lib\n'}
+[8.422480] (-) TimerEvent: {}
+[8.424023] (data_transmitter) StdoutLine: {'line': b'copying data_transmitter/image_sender.py -> /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter\n'}
+[8.424776] (data_transmitter) StdoutLine: {'line': b'copying data_transmitter/__init__.py -> /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter\n'}
+[8.425360] (cmp10a_imu) StdoutLine: {'line': b'creating /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu\n'}
+[8.426022] (data_transmitter) StdoutLine: {'line': b'copying data_transmitter/tcp_teleop_single.py -> /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter\n'}
+[8.426728] (data_transmitter) StdoutLine: {'line': b'copying data_transmitter/stereo_image_processor.py -> /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter\n'}
+[8.427361] (cmp10a_imu) StdoutLine: {'line': b'copying /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu/cmp10a_chatgpt.py -> /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu\n'}
+[8.429016] (cmp10a_imu) StdoutLine: {'line': b'copying /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu/cmp10a_imu_node.py -> /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu\n'}
+[8.441341] (cmp10a_imu) StdoutLine: {'line': b'copying /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu/__init__.py -> /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu\n'}
+[8.443674] (data_transmitter) StdoutLine: {'line': b'copying data_transmitter/image_receiver_single.py -> /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter\n'}
+[8.445518] (cmp10a_imu) StdoutLine: {'line': b'copying /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu/cmp10a_imu_node_copy.py -> /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu\n'}
+[8.455627] (data_transmitter) StdoutLine: {'line': b'running install\n'}
+[8.457104] (data_transmitter) StdoutLine: {'line': b'running install_lib\n'}
+[8.467456] (cmp10a_imu) StdoutLine: {'line': b'copying /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu/cmp10a_imu_node_ros1_stype.py -> /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu\n'}
+[8.468513] (data_transmitter) StdoutLine: {'line': b'creating /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter\n'}
+[8.469417] (data_transmitter) StdoutLine: {'line': b'copying /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter/data_sender.py -> /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter\n'}
+[8.477353] (cmp10a_imu) StdoutLine: {'line': b'byte-compiling /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu/cmp10a_chatgpt.py to cmp10a_chatgpt.cpython-310.pyc\n'}
+[8.484377] (data_transmitter) StdoutLine: {'line': b'copying /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter/image_sender.py -> /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter\n'}
+[8.485463] (data_transmitter) StdoutLine: {'line': b'copying /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter/__init__.py -> /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter\n'}
+[8.486480] (data_transmitter) StdoutLine: {'line': b'copying /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter/tcp_teleop_single.py -> /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter\n'}
+[8.487206] (data_transmitter) StdoutLine: {'line': b'copying /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter/stereo_image_processor.py -> /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter\n'}
+[8.487874] (data_transmitter) StdoutLine: {'line': b'copying /home/viver1/ros2_ws/src/build/data_transmitter/build/lib/data_transmitter/image_receiver_single.py -> /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter\n'}
+[8.488427] (data_transmitter) StdoutLine: {'line': b'byte-compiling /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter/data_sender.py to data_sender.cpython-310.pyc\n'}
+[8.490644] (cmp10a_imu) StdoutLine: {'line': b'byte-compiling /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu/cmp10a_imu_node.py to cmp10a_imu_node.cpython-310.pyc\n'}
+[8.491521] (data_transmitter) StdoutLine: {'line': b'byte-compiling /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter/image_sender.py to image_sender.cpython-310.pyc\n'}
+[8.492883] (cmp10a_imu) StdoutLine: {'line': b'byte-compiling /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu/__init__.py to __init__.cpython-310.pyc\n'}
+[8.493639] (cmp10a_imu) StdoutLine: {'line': b'byte-compiling /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu/cmp10a_imu_node_copy.py to cmp10a_imu_node_copy.cpython-310.pyc\n'}
+[8.495577] (data_transmitter) StdoutLine: {'line': b'byte-compiling /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter/__init__.py to __init__.cpython-310.pyc\n'}
+[8.496692] (data_transmitter) StdoutLine: {'line': b'byte-compiling /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter/tcp_teleop_single.py to tcp_teleop_single.cpython-310.pyc\n'}
+[8.497815] (data_transmitter) StdoutLine: {'line': b'byte-compiling /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter/stereo_image_processor.py to stereo_image_processor.cpython-310.pyc\n'}
+[8.499181] (data_transmitter) StdoutLine: {'line': b'byte-compiling /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter/image_receiver_single.py to image_receiver_single.cpython-310.pyc\n'}
+[8.500148] (cmp10a_imu) StdoutLine: {'line': b'byte-compiling /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu/cmp10a_imu_node_ros1_stype.py to cmp10a_imu_node_ros1_stype.cpython-310.pyc\n'}
+[8.500829] (data_transmitter) StdoutLine: {'line': b'running install_data\n'}
+[8.501543] (data_transmitter) StdoutLine: {'line': b'creating /home/viver1/ros2_ws/src/install/data_transmitter/share/ament_index\n'}
+[8.502515] (cmp10a_imu) StdoutLine: {'line': b'running install_data\n'}
+[8.503113] (cmp10a_imu) StdoutLine: {'line': b'creating /home/viver1/ros2_ws/src/install/cmp10a_imu/share/ament_index\n'}
+[8.504243] (cmp10a_imu) StdoutLine: {'line': b'creating /home/viver1/ros2_ws/src/install/cmp10a_imu/share/ament_index/resource_index\n'}
+[8.504734] (cmp10a_imu) StdoutLine: {'line': b'creating /home/viver1/ros2_ws/src/install/cmp10a_imu/share/ament_index/resource_index/packages\n'}
+[8.505185] (cmp10a_imu) StdoutLine: {'line': b'copying resource/cmp10a_imu -> /home/viver1/ros2_ws/src/install/cmp10a_imu/share/ament_index/resource_index/packages\n'}
+[8.505636] (data_transmitter) StdoutLine: {'line': b'creating /home/viver1/ros2_ws/src/install/data_transmitter/share/ament_index/resource_index\n'}
+[8.506114] (data_transmitter) StdoutLine: {'line': b'creating /home/viver1/ros2_ws/src/install/data_transmitter/share/ament_index/resource_index/packages\n'}
+[8.506584] (data_transmitter) StdoutLine: {'line': b'copying resource/data_transmitter -> /home/viver1/ros2_ws/src/install/data_transmitter/share/ament_index/resource_index/packages\n'}
+[8.507008] (cmp10a_imu) StdoutLine: {'line': b'copying package.xml -> /home/viver1/ros2_ws/src/install/cmp10a_imu/share/cmp10a_imu\n'}
+[8.507540] (data_transmitter) StdoutLine: {'line': b'copying package.xml -> /home/viver1/ros2_ws/src/install/data_transmitter/share/data_transmitter\n'}
+[8.508120] (data_transmitter) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.508740] (cmp10a_imu) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.509314] (data_transmitter) StdoutLine: {'line': b'Copying ../build/data_transmitter/data_transmitter.egg-info to /home/viver1/ros2_ws/src/install/data_transmitter/lib/python3.10/site-packages/data_transmitter-0.0.0-py3.10.egg-info\n'}
+[8.509859] (cmp10a_imu) StdoutLine: {'line': b'Copying ../build/cmp10a_imu/cmp10a_imu.egg-info to /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu-0.0.0-py3.10.egg-info\n'}
+[8.515929] (cmp10a_imu) StdoutLine: {'line': b'running install_scripts\n'}
+[8.516728] (data_transmitter) StdoutLine: {'line': b'running install_scripts\n'}
+[8.522804] (-) TimerEvent: {}
+[8.624558] (-) TimerEvent: {}
+[8.666627] (cmp10a_imu) StdoutLine: {'line': b'Installing cmp10a_imu_node script to /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/cmp10a_imu\n'}
+[8.669781] (cmp10a_imu) StdoutLine: {'line': b"writing list of installed files to '/home/viver1/ros2_ws/src/build/cmp10a_imu/install.log'\n"}
+[8.694821] (data_transmitter) StdoutLine: {'line': b'Installing data_sender script to /home/viver1/ros2_ws/src/install/data_transmitter/lib/data_transmitter\n'}
+[8.696800] (data_transmitter) StdoutLine: {'line': b'Installing image_sender script to /home/viver1/ros2_ws/src/install/data_transmitter/lib/data_transmitter\n'}
+[8.698006] (data_transmitter) StdoutLine: {'line': b'Installing stereo_image_processor script to /home/viver1/ros2_ws/src/install/data_transmitter/lib/data_transmitter\n'}
+[8.700821] (data_transmitter) StdoutLine: {'line': b"writing list of installed files to '/home/viver1/ros2_ws/src/build/data_transmitter/install.log'\n"}
+[8.724970] (-) TimerEvent: {}
+[8.827412] (-) TimerEvent: {}
+[8.929326] (-) TimerEvent: {}
+[8.950378] (data_transmitter) CommandEnded: {'returncode': 0}
+[9.029539] (-) TimerEvent: {}
+[9.049554] (data_transmitter) JobEnded: {'identifier': 'data_transmitter', 'rc': 0}
+[9.059629] (cmp10a_imu) CommandEnded: {'returncode': 0}
+[9.114590] (cmp10a_imu) JobEnded: {'identifier': 'cmp10a_imu', 'rc': 0}
+[9.119820] (-) EventReactorShutdown: {}

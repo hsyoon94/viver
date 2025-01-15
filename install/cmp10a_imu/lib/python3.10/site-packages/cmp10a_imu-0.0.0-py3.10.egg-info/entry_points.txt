@@ -1,0 +1,3 @@
+[console_scripts]
+cmp10a_imu_node = cmp10a_imu.cmp10a_imu_node:main
+

@@ -1,0 +1,6 @@
+source;share/cmp10a_imu/hook/pythonpath.ps1
+source;share/cmp10a_imu/hook/pythonpath.dsv
+source;share/cmp10a_imu/hook/pythonpath.sh
+source;share/cmp10a_imu/hook/ament_prefix_path.ps1
+source;share/cmp10a_imu/hook/ament_prefix_path.dsv
+source;share/cmp10a_imu/hook/ament_prefix_path.sh

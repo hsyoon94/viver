@@ -1,0 +1,44 @@
+running egg_info
+creating ../build/cmp10a_imu/cmp10a_imu.egg-info
+writing ../build/cmp10a_imu/cmp10a_imu.egg-info/PKG-INFO
+writing dependency_links to ../build/cmp10a_imu/cmp10a_imu.egg-info/dependency_links.txt
+writing entry points to ../build/cmp10a_imu/cmp10a_imu.egg-info/entry_points.txt
+writing requirements to ../build/cmp10a_imu/cmp10a_imu.egg-info/requires.txt
+writing top-level names to ../build/cmp10a_imu/cmp10a_imu.egg-info/top_level.txt
+writing manifest file '../build/cmp10a_imu/cmp10a_imu.egg-info/SOURCES.txt'
+reading manifest file '../build/cmp10a_imu/cmp10a_imu.egg-info/SOURCES.txt'
+writing manifest file '../build/cmp10a_imu/cmp10a_imu.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/viver1/ros2_ws/src/build/cmp10a_imu/build
+creating /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib
+creating /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu
+copying cmp10a_imu/cmp10a_chatgpt.py -> /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu
+copying cmp10a_imu/cmp10a_imu_node.py -> /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu
+copying cmp10a_imu/__init__.py -> /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu
+copying cmp10a_imu/cmp10a_imu_node_copy.py -> /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu
+copying cmp10a_imu/cmp10a_imu_node_ros1_stype.py -> /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu
+running install
+running install_lib
+creating /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu
+copying /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu/cmp10a_chatgpt.py -> /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu
+copying /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu/cmp10a_imu_node.py -> /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu
+copying /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu/__init__.py -> /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu
+copying /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu/cmp10a_imu_node_copy.py -> /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu
+copying /home/viver1/ros2_ws/src/build/cmp10a_imu/build/lib/cmp10a_imu/cmp10a_imu_node_ros1_stype.py -> /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu
+byte-compiling /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu/cmp10a_chatgpt.py to cmp10a_chatgpt.cpython-310.pyc
+byte-compiling /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu/cmp10a_imu_node.py to cmp10a_imu_node.cpython-310.pyc
+byte-compiling /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu/cmp10a_imu_node_copy.py to cmp10a_imu_node_copy.cpython-310.pyc
+byte-compiling /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu/cmp10a_imu_node_ros1_stype.py to cmp10a_imu_node_ros1_stype.cpython-310.pyc
+running install_data
+creating /home/viver1/ros2_ws/src/install/cmp10a_imu/share/ament_index
+creating /home/viver1/ros2_ws/src/install/cmp10a_imu/share/ament_index/resource_index
+creating /home/viver1/ros2_ws/src/install/cmp10a_imu/share/ament_index/resource_index/packages
+copying resource/cmp10a_imu -> /home/viver1/ros2_ws/src/install/cmp10a_imu/share/ament_index/resource_index/packages
+copying package.xml -> /home/viver1/ros2_ws/src/install/cmp10a_imu/share/cmp10a_imu
+running install_egg_info
+Copying ../build/cmp10a_imu/cmp10a_imu.egg-info to /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/python3.10/site-packages/cmp10a_imu-0.0.0-py3.10.egg-info
+running install_scripts
+Installing cmp10a_imu_node script to /home/viver1/ros2_ws/src/install/cmp10a_imu/lib/cmp10a_imu
+writing list of installed files to '/home/viver1/ros2_ws/src/build/cmp10a_imu/install.log'
