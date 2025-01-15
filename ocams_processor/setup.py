@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'data_transmitter'
+package_name = 'ocams_processor'
 
 setup(
     name=package_name,
@@ -20,10 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'data_sender = data_transmitter.imu_processor:main',
-            'stereo_image_processor = data_transmitter.stereo_image_processor:main',
-            'image_sender = data_transmitter.image_sender:main',
-            'imu_processor = data_transmitter.imu_processor:main',
+            'stereo_image_processor = ocams_processor.stereo_image_processor:main',
+            'imu_processor = ocams_processor.imu_processor:main',
         ],
     },
 )

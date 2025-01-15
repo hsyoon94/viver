@@ -1,7 +1,7 @@
 from setuptools import setup
 import os, glob
 
-package_name = 'wit_ros2_imu'
+package_name = 'cmp10a_processor'
 
 setup(
     name=package_name,
@@ -22,7 +22,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        'wit_ros2_imu = wit_ros2_imu.wit_ros2_imu:main'
+        'cmp10a_processor = cmp10a_processor.cmp10a_processor:main'
         ],
     },
 )
