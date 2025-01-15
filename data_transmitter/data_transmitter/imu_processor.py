@@ -1,72 +1,99 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Imu
-import socket
-import json
+import serial
+import math
 
-class ImuSender(Node):
+class OCamIMUNode(Node):
     def __init__(self):
-        super().__init__('imu_sender')
+        super().__init__('ocams_imu_node')
 
-        # 송신 대상 IP와 포트 설정
-        self.target_ip = '147.46.245.118'  # 외부 PC의 IP
-        self.target_port = 5005           # 외부 PC의 포트
+        # Parameters for serial communication
+        self.declare_parameter('port', '/dev/ttyACM0')
+        self.declare_parameter('baudrate', 115200)
 
-        # UDP 소켓 초기화
-        self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        # Get parameters
+        port = self.get_parameter('port').get_parameter_value().string_value
+        baudrate = self.get_parameter('baudrate').get_parameter_value().integer_value
 
-        # IMU 메시지 구독 설정
-        self.subscription = self.create_subscription(
-            Imu,
-            'imu/data',
-            self.imu_callback,
-            10
-        )
+        # Initialize serial communication
+        self.serial_port = serial.Serial(port, baudrate, timeout=1)
 
-        self.get_logger().info("IMU Sender Node Initialized")
+        # Publisher for /imu/data
+        self.imu_publisher = self.create_publisher(Imu, '/imu/data', 10)
 
-    def imu_callback(self, msg: Imu):
-        # IMU 데이터를 JSON으로 변환
-        imu_data = {
-            'linear_acceleration': {
-                'x': msg.linear_acceleration.x,
-                'y': msg.linear_acceleration.y,
-                'z': msg.linear_acceleration.z,
-            },
-            'angular_velocity': {
-                'x': msg.angular_velocity.x,
-                'y': msg.angular_velocity.y,
-                'z': msg.angular_velocity.z,
-            },
-            'orientation': {
-                'x': msg.orientation.x,
-                'y': msg.orientation.y,
-                'z': msg.orientation.z,
-                'w': msg.orientation.w,
-            }
-        }
+        # Timer to read and publish data periodically
+        self.timer = self.create_timer(0.01, self.publish_imu_data)  # 100 Hz
 
-        # JSON 직렬화
-        imu_json = json.dumps(imu_data)
+        self.get_logger().info(f'Initialized oCamS IMU Node on port {port} with baudrate {baudrate}')
 
-        # UDP 송신
-        self.sock.sendto(imu_json.encode('utf-8'), (self.target_ip, self.target_port))
+    def publish_imu_data(self):
+        try:
+            # Read a line of data from the IMU
+            line = self.serial_port.readline().decode('utf-8').strip()
+            
+            # Check if the line starts with the expected header
+            if not line.startswith('$LMGQUA'):
+                self.get_logger().warn(f"Ignoring unexpected data: {line}")
+                return
 
-        self.get_logger().info(f"IMU data sent to {self.target_ip}:{self.target_port}")
+            # Split the line into components
+            parts = line.split(',')
+            if len(parts) != 15:
+                self.get_logger().warn(f"Unexpected data length: {len(parts)}. Raw data: {line}")
+                return
+
+            # Parse the data fields
+            timestamp = int(parts[1])
+            ax, ay, az = map(lambda v: float(v) * 9.81 / 1000, parts[2:5])  # Convert accel to m/s²
+            gx, gy, gz = map(lambda v: float(v) * math.pi / 180 / 1000, parts[5:8])  # Convert gyro to rad/s
+            mx, my, mz = map(float, parts[8:11])  # Magnetometer values
+            quat_w, quat_x, quat_y, quat_z = map(lambda v: float(v) / 4096, parts[11:15])  # Quaternion
+
+            # Populate Imu message
+            imu_msg = Imu()
+            imu_msg.header.stamp = self.get_clock().now().to_msg()
+            imu_msg.header.frame_id = 'imu_link'
+
+            # Linear acceleration (m/s^2)
+            imu_msg.linear_acceleration.x = ax
+            imu_msg.linear_acceleration.y = ay
+            imu_msg.linear_acceleration.z = az
+
+            # Angular velocity (rad/s)
+            imu_msg.angular_velocity.x = gx
+            imu_msg.angular_velocity.y = gy
+            imu_msg.angular_velocity.z = gz
+
+            # Orientation (quaternion)
+            imu_msg.orientation.w = quat_w
+            imu_msg.orientation.x = quat_x
+            imu_msg.orientation.y = quat_y
+            imu_msg.orientation.z = quat_z
+
+            # Publish the IMU data
+            self.imu_publisher.publish(imu_msg)
+        except Exception as e:
+            self.get_logger().error(f'Error processing IMU data: {e}')
+
+
+    def destroy_node(self):
+        self.serial_port.close()
+        super().destroy_node()
+
 
 def main(args=None):
     rclpy.init(args=args)
-    node = ImuSender()
+    node = OCamIMUNode()
 
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        pass
+        node.get_logger().info('Shutting down oCamS IMU Node')
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
-    # 종료 시 노드 정리
-    node.destroy_node()
-    rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
-

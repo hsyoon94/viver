@@ -23,6 +23,7 @@ setup(
             'data_sender = data_transmitter.imu_processor:main',
             'stereo_image_processor = data_transmitter.stereo_image_processor:main',
             'image_sender = data_transmitter.image_sender:main',
+            'imu_processor = data_transmitter.imu_processor:main',
         ],
     },
 )
