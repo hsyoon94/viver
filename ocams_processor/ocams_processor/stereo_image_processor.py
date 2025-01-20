@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 import numpy as np
 import cv2
-from sensor_msgs.msg import Image
+from sensor_msgs.msg import Image, CompressedImage
 from cv_bridge import CvBridge
 
 class ContinuousNode(Node):
@@ -19,8 +19,8 @@ class ContinuousNode(Node):
 
         self.bridge = CvBridge()
 
-        self.publisher_left = self.create_publisher(Image, '/camera/image_left', 10)
-        self.publisher_right = self.create_publisher(Image, '/camera/image_right', 10)
+        self.publisher_left = self.create_publisher(CompressedImage, '/camera/image_left', 10)
+        self.publisher_right = self.create_publisher(CompressedImage, '/camera/image_right', 10)
 
 
     def split_images(self, input_frame):
@@ -35,8 +35,15 @@ class ContinuousNode(Node):
         ret, frame = self.cap.read()
         left_rgb, right_rgb = self.split_images(frame)
 
-        left_rgb_msg = self.bridge.cv2_to_imgmsg(left_rgb, encoding="bgr8")
-        right_rgb_msg = self.bridge.cv2_to_imgmsg(right_rgb, encoding="bgr8")
+        _, buffer_left = cv2.imencode('.jpg', left_rgb)
+        left_rgb_msg = CompressedImage()
+        left_rgb_msg.format = 'jpeg'
+        left_rgb_msg.data = np.array(buffer_left).tobytes()
+
+        _, buffer_right = cv2.imencode('.jpg', right_rgb)
+        right_rgb_msg = CompressedImage()
+        right_rgb_msg.format = 'jpeg'
+        right_rgb_msg.data = np.array(buffer_right).tobytes()
 
         current_time = self.get_clock().now()
         left_rgb_msg.header.stamp = current_time.to_msg()
