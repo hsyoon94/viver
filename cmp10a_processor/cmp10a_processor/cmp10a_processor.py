@@ -139,7 +139,7 @@ class IMUDriverNode(Node):
         self.imu_msg.header.frame_id = 'imu_link'
         self.qos = QoSProfile(depth=100, reliability = ReliabilityPolicy.BEST_EFFORT)
         # 创建IMU数据发布器
-        self.imu_pub = self.create_publisher(Imu, 'imu/cmp10a/data', self.qos)
+        self.imu_pub = self.create_publisher(Imu, '/viver1/imu/cmp10a/data', self.qos)
         #self.port = self.get_parameter('port')
         #self.baud_rate = self.get_parameter('baud')
 

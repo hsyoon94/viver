@@ -19,8 +19,8 @@ class ContinuousNode(Node):
 
         self.bridge = CvBridge()
 
-        self.publisher_left = self.create_publisher(CompressedImage, '/camera/image_left', 10)
-        self.publisher_right = self.create_publisher(CompressedImage, '/camera/image_right', 10)
+        self.publisher_left = self.create_publisher(CompressedImage, '/viver1/camera/image/left', 10)
+        self.publisher_right = self.create_publisher(CompressedImage, '/viver1/camera/image/right', 10)
 
 
     def split_images(self, input_frame):

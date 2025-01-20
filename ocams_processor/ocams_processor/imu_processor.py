@@ -20,7 +20,7 @@ class OCamIMUNode(Node):
         self.serial_port = serial.Serial(port, baudrate, timeout=1)
 
         # Publisher for /imu/data
-        self.imu_publisher = self.create_publisher(Imu, '/imu/ocams/data', 10)
+        self.imu_publisher = self.create_publisher(Imu, '/viver1/imu/ocams/data', 10)
 
         # Timer to read and publish data periodically
         self.timer = self.create_timer(0.01, self.publish_imu_data)  # 100 Hz
